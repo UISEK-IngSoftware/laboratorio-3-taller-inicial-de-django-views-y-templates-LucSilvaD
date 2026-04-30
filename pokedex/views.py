@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
 def index(request):
-    return render(request, 'index.html')
+    pokemons = ["Charizar", "pikachu", "Metagross", "tyranitar", "gengar"]
+    return render(request, 'index.html', {"pokemons": pokemons})
 
+def pokemon_details(request, pokemon):
+    return render(request, 'details.html', {"pokemon": pokemon})

@@ -12,19 +12,21 @@
     />
   </head>
   <body>
+
+
+
+
     <div class="container">
       <div class="bg-primary text-white p-5 text-center">
         <h1>Mi Pokedex</h1>
       </div>
-      <p class="p-4">Bienvenido a mi Pokedex!</p>
-      <ul class="list-group">
-        {%for pokemon in pokemons %}
-        <li class="list-group-item">
-            <a href="{% url 'details' pokemon=pokemon %}">{{pokemon}}</a>
-        </li>
-        {%endfor%}
-      </ul>
+      <p class="p-4">Has elejido a {{ pokemon }}</p>
     </div>
+
+
+
+
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
